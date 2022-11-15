@@ -10,20 +10,47 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link rel="“stylesheet”" href="“app.js”" />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+    <header>
+      <nav class="“navbar" navbar-light bg-light”>
+        <span
+          class="“navbar-brand"
+          mb-0
+          h1
+          container-fluid
+          text-center
+          d-flex
+          align-items-center
+          justify-content-center
+          wrap”
+          >Excuse Generator</span
+        >
+      </nav>
+    </header>
+    <div
+      class="“container-fluid"
+      text-center
+      d-flex
+      align-items-center
+      justify-content-center
+      wrap”
+    >
+      <h1>
+        You’ll never believe me, but...<br />
+        <span id="excuse"></span>
+        <br />
+        <button
+          onclick="window.location.reload()"
+          class="mt-5"
+          btn
+          btn-primary”
+        >
+          Refresh Excuse
+        </button>
+      </h1>
     </div>
   </body>
 </html>
